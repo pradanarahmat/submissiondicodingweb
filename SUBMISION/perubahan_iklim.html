@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBMISSION</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: auto;
+            font-family: Arial;
+            color: rgb(228, 228, 228);
+            background-color: black;
+            display: flex;
+        }
+
+        /* AWAL NAVIGASI*/
+
+        nav {
+            flex: 1;
+        }
+
+        .navi {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .bungkus nav a {
+            position: relative;
+            top: 10px;
+            color: rgb(151, 225, 255);
+            justify-content: space-evenly;
+        }
+
+        .bungkus nav a:hover {
+            color: rgb(193, 232, 248);
+        }
+
+        /* AKHIR NAVIGASI*/
+
+        .bungkus .judul a {
+            color: rgb(245, 245, 245);
+            font-family: "Montserrat";
+            font-size: 30px;
+            padding-left: 45px;
+        }
+
+        header {
+            display: flex;
+            background-color: #0a81ab;
+            padding: 20px;
+            position: relative;
+            font-size: 15px;
+        }
+
+        header .judul a {
+            padding: 20px;
+        }
+
+        .mainan {
+            display: flex;
+        }
+
+        main {
+            background-color: rgb(0, 0, 0);
+            padding: 50px 50px 0px;
+            position: relative;
+        }
+
+        /* AWAL ARTIKEL*/
+
+        .content {
+            flex: 4;
+            padding-right: 0px;
+        }
+
+
+
+        .artikel1 article {
+            padding: 0px 200px;
+            font-size: 10px;
+            position: relative;
+            top: -17px;
+            text-align: left;
+            line-height: 1.8;
+            font-size: 15px;
+
+
+        }
+
+        .artikel1 article h1 {
+            font-size: 40px;
+        }
+
+        .artikel1 .img {
+            text-align: center;
+        }
+
+        .artikel1 .img img {
+            border-radius: 2px;
+        }
+
+        .artikel2 article {
+            padding: 0px 200px;
+            font-size: 10px;
+            top: -20px;
+            font-size: 15px;
+            text-align: left;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .content .fasilitas h4 {
+            padding: 0px 200px;
+            line-height: 10px;
+            top: -20px;
+            position: relative;
+        }
+
+        a:link {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        a {
+            color: rgb(77, 160, 255);
+        }
+
+        .artikel3 article {
+
+            padding: 0px 200px;
+            font-size: 10px;
+
+            font-size: 15px;
+            text-align: left;
+            position: relative;
+            line-height: 1.8;
+            
+        }
+
+        .artikel3 article h1 {
+            font-size: 40px;
+            position: relative;
+            top: 0px;
+            line-height: 5px;
+            
+        }
+
+        /* AKHIR ARTIKEL*/
+
+        /* AWAL ASIDE KIRI*/
+
+        .sidebar {
+            background-color: rgb(54, 54, 54);
+            flex: 0.7;
+            border-radius: 5px;
+            margin-top: 0px;
+        }
+
+        .sidebar img {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+
+        }
+
+        .sidebar aside {
+            position: relative;
+
+            text-align: center;
+        }
+
+        .sidebar aside a:hover {
+            opacity: 90%;
+        }
+
+        .sidebar aside h1 {
+            font-size: 15px;
+            text-align: center;
+            top: -100px;
+            color: #eeeded;
+        }
+
+        /* AKHIR ASIDE KIRI*/
+
+        /* AWAL ASIDE KANAN*/
+
+        .sidebarkanan {
+            flex: 1;
+            background-color: rgb(54, 54, 54);
+            border-radius: 5px;
+        }
+
+        .sidebarkanan aside {
+            text-align: center;
+        }
+
+        .sidebarkanan .artikellainnya h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .sidebarkanan .more a h1 {
+            position: relative;
+            margin-top: 2000px;
+            text-align: center;
+            font-size: 15px;
+            color: #dddddd;
+        }
+
+        .sidebarkanan .more a h1:hover {
+            color: #cacaca;
+        }
+
+        /* AKHIR ASIDE KANAN*/
+
+        /* AWAL ARTIKEL LAINNYA*/
+
+        .lainnya0 img {
+            border-radius: 5px;
+            width: 330px;
+            height: 200px;
+        }
+
+        .lainnya0 h1 {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .lainnya1 img {
+            border-radius: 5px;
+            width: 330px;
+            height: 200px;
+        }
+
+        .lainnya1 h1 {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .lainnya2 img {
+            border-radius: 5px;
+            width: 330px;
+            height: 200px;
+        }
+
+        .lainnya2 h1 {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+        }
+
+        /* AKHIR ARTIKEL LAINNYA*/
+
+        /* AWAL FOOTER*/
+
+        .bungkus footer {
+            margin: 50px auto;
+            padding: 3px;
+        }
+
+        footer {
+            background-color: #2a83a7;
+            width: auto;
+            position: relative;
+            top: 50px;
+        }
+
+        .isifooter .sosialmedia {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .isifooter .sosialmedia a {
+            color: #dddddd;
+        }
+
+        .isifooter .sosialmedia a:hover {
+            color: #cacaca;
+        }
+
+        footer h1 {
+            text-align: center;
+            color: rgb(224, 224, 224);
+        }
+
+        /* AKHIR FOOTER*/
+    </style>
+</head>
+
+<body>
+    <div class="bungkus">
+        <header>
+            <div class="judul">
+                <a href="covid-19-di-indonesia.html">CityZen.id</a>
+            </div>
+
+            <nav>
+                <div class="navi">
+                    <div>
+                        <a href="#">Ekonomi</a>
+                    </div>
+                    <div>
+                        <a href="#">Perubahan Iklim</a>
+                    </div>
+                    <div>
+                        <a href="#">Astronomi</a>
+                    </div>
+                    <div>
+                        <a href="#">Saham</a>
+                    </div>
+                    <div>
+                        <a href="#">Konspirasi</a>
+                    </div>
+                    <div>
+                        <a href="#">Bencana Alam</a>
+                    </div>
+                    <div>
+                        <a href="#">Luar Negeri</a>
+                    </div>
+                    <div>
+                        <a href="#">Bisnis</a>
+                    </div>
+                    <div>
+                        <a href="#">Kesehatan</a>
+                    </div>
+                    <div>
+                        <a href="#">Konflik</a>
+                    </div>
+                    <div>
+                        <a href="#">Teknologi</a>
+                    </div>
+                    <div>
+                        <a href="#">Hobi</a>
+                    </div>
+                    <div>
+                        <a href="#">Trend</a>
+                    </div>
+                    <div>
+                        <a href="#">Gaya Hidup</a>
+                    </div>
+                    <div>
+                        <a href="#">Hewan</a>
+                    </div>
+                    <div>
+                        <a href="#">Lingkungan</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!-- Awal Main -->
+        <main>
+            <div class="mainan">
+                <div class="sidebarkanan">
+                    <aside>
+                        <div class="artikellainnya">
+                            <h1>Artikel Lainnya</h1>
+                        </div>
+                        <div class="lainnya0">
+                            <a href="index.html">
+                                <img src="img/viruscorona.jpg" alt="">
+                                <h1>Covid 19 di Indonesia</h1>
+                            </a>
+                        </div>
+                        <div class="lainnya1">
+                            <a href="#">
+                                <img src="img/perubahaniklim.jpg" alt="">
+                                <h1>Perubahan Iklim</h1>
+                            </a>
+                        </div>
+                        <div class="lainnya2">
+                            <a href="kebakaran_hutan_kalimantan.html">
+                                <img src="img/kebakarankalimantan.jpg" alt="">
+                                <h1>Kebakaran Hutan Kalimantan</h1>
+                            </a>
+                        </div>
+                        <div class="more">
+                            <a href="#">
+                                <h1>More Article</h1>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="content">
+                    <!--  Awal Artikel 1 -->
+                    <div class="artikel1">
+                        <section>
+                            <article>
+                                <h1>
+                                    Perubahan Iklim
+                                </h1>
+                                <div class="img">
+                                    <img src="img/perubahaniklim.jpg" alt="">
+                                </div>
+                                <p>
+                                    Infeksi virus Corona disebut COVID-19 (Corona Virus Disease 2019) dan pertama kali
+                                    ditemukan di kota Wuhan, China pada akhir Desember 2019. Virus ini menular dengan
+                                    sangat
+                                    cepat dan telah menyebar ke hampir semua negara, termasuk Indonesia, hanya dalam
+                                    waktu
+                                    beberapa bulan. Hal tersebut membuat beberapa negara menerapkan kebijakan untuk
+                                    memberlakukan lockdown dalam rangka mencegah penyebaran virus Corona. Di Indonesia
+                                    sendiri, diberlakukan kebijakan Pembatasan Sosial Berskala Besar (PSBB) untuk
+                                    menekan
+                                    penyebaran virus ini. Coronavirus adalah kumpulan virus yang bisa menginfeksi sistem
+                                    pernapasan. Pada banyak kasus, virus ini hanya menyebabkan infeksi pernapasan
+                                    ringan,
+                                    seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat,
+                                    seperti
+                                    infeksi paru-paru (pneumonia).
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                    <!--  Akhir Artikel 1 -->
+
+                    <!--  Awal Artikel 2 -->
+                    <div class="artikel2">
+                        <section>
+                            <article>Hal tersebut membuat beberapa negara menerapkan kebijakan untuk memberlakukan
+                                lockdown dalam rangka mencegah penyebaran virus Corona. Di Indonesia sendiri,
+                                diberlakukan kebijakan Pembatasan Sosial Berskala Besar (PSBB) untuk menekan penyebaran
+                                virus ini. Coronavirus adalah kumpulan virus yang bisa menginfeksi sistem pernapasan.
+                                Pada banyak kasus, virus ini hanya menyebabkan infeksi pernapasan ringan, seperti flu.
+                                Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat, seperti infeksi
+                                paru-paru (pneumonia). Virus ini menular melalui percikan dahak (droplet) dari saluran
+                                pernapasan, misalnya ketika berada di ruang tertutup yang ramai dengan sirkulasi udara
+                                yang kurang baik atau kontak langsung dengan droplet.
+                                <p>
+                                    Selain virus SARS-CoV-2 atau virus Corona, virus yang juga termasuk dalam kelompok
+                                    ini adalah virus penyebab Severe Acute Respiratory Syndrome (SARS) dan virus
+                                    penyebab Middle-East Respiratory Syndrome (MERS). Meski disebabkan oleh virus dari
+                                    kelompok yang sama, yaitu coronavirus, COVID-19 memiliki beberapa perbedaan dengan
+                                    SARS dan MERS, antara lain dalam hal kecepatan penyebaran dan keparahan gejala.
+                                </p>
+
+                                <p>
+                                    Bila Anda memerlukan pemeriksaan COVID-19, klik tautan di bawah ini agar Anda dapat
+                                    diarahkan ke fasilitas kesehatan terdekat:
+                                </p>
+                            </article>
+                            <div class="fasilitas">
+                                <ul>
+                                    <h4><a href="https://www.alodokter.com/cari-rumah-sakit/kedokteran-umum/tes-risiko-covid19"
+                                            target="_blank">Rapid
+                                            Test Anti Body</a>
+                                    </h4>
+                                    <h4><a href="https://www.alodokter.com/cari-rumah-sakit/kedokteran-umum/swab-antigen"
+                                            target="_blank">Swab
+                                            Antigen</a>
+                                    </h4>
+                                    <h4><a href="https://www.alodokter.com/cari-rumah-sakit/kedokteran-umum/pcr-swab-test"
+                                            target="_blank">PCR</a>
+                                    </h4>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <!--  Akhir Artikel 2 -->
+
+                    <!--  Awal Artikel 3 -->
+                    <div class="artikel3">
+                        <section>
+                            <article>
+                                <h1>Saya Harus Bagaimana??</h1>
+                                Saat ini, Indonesia sedang melakukan vaksinasi COVID-19 secara berkala ke
+                                masyarakat
+                                Indonesia.
+                                Meskipun vaksinasi sudah mulai di jalankan, cara pencegahan yang terbaik adalah
+                                dengan
+                                menghindari
+                                faktor-faktor yang bisa menyebabkan Anda terinfeksi virus ini, yaitu:
+                                <p>
+                                    <ol>
+                                        <li>Terapkan physical distancing, yaitu menjaga jarak minimal 1 meter
+                                            dari
+                                            orang
+                                            lain,
+                                            dan
+                                            jangan dulu ke luar rumah kecuali ada keperluan mendesak.</li>
+                                        <li>
+                                            Gunakan masker saat beraktivitas di tempat umum atau keramaian,
+                                            termasuk
+                                            saat
+                                            pergi
+                                            berbelanja bahan makanan dan mengikuti ibadah di hari raya, misalnya
+                                            Idul
+                                            Adha.
+                                        </li>
+                                        <li>
+                                            Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang
+                                            mengandung
+                                            alkohol
+                                            minimal 60%, terutama setelah beraktivitas di luar rumah atau di
+                                            tempat
+                                            umum.
+                                        </li>
+                                        <li>
+                                            Jangan menyentuh mata, mulut, dan hidung sebelum mencuci tangan.
+                                        </li>
+                                        <li>
+                                            Meningkatkan daya tahan tubuh dengan pola hidup sehat, seperti
+                                            mengonsumsi
+                                            makanan
+                                            bergizi, berolahraga secara rutin, beristirahat yang cukup, dan
+                                            mencegah
+                                            stres.
+                                        </li>
+                                        <li>
+                                            Hindari kontak dengan penderita COVID-19, orang yang dicurigai
+                                            positif
+                                            terinfeksi
+                                            virus
+                                            Corona, atau orang yang sedang sakit demam, batuk, atau pilek.
+                                        </li>
+                                        <li>
+                                            Tutup mulut dan hidung dengan tisu saat batuk atau bersin, kemudian
+                                            buang
+                                            tisu
+                                            ke
+                                            tempat
+                                            sampah.
+                                        </li>
+                                        <li>
+                                            Jaga kebersihan benda yang sering disentuh dan kebersihan
+                                            lingkungan,
+                                            termasuk
+                                            kebersihan rumah.
+                                        </li>
+                                    </ol>
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                    <!--  Akhir Artikel 3 -->
+                </div>
+                <!--  Awal Aside -->
+                <div class="sidebar">
+                    <aside><!--  DATA DIRI -->
+                        <!--  Untuk website data diri saya menggunakan Template Karena saya mau berangkat KKN pada tanggal 15 juni 2021 -->
+                        <h1>Penulis Submission</h1>
+                        <a href="datadiri/index.html" target="_blank">
+                            <img src="img/saya.jpg" alt=""></a>
+                        <!--  AKHIR DATA DIRI -->
+                    </aside>
+
+                </div>
+                <!--  Akhir Aside -->
+            </div>
+        </main>
+        <!-- Akhir Main -->
+
+        <!-- Awal Footer -->
+        <div class="isifooter">
+            <footer>
+                <h1>SUBMISSION DICODING</h1>
+                <div class="sosialmedia">
+                    <a class="instragram" href="https://www.instagram.com/pradanarahmatsaputra/"
+                        target="_blank">Instagram</a>
+                    <a class="facebook" href="https://www.facebook.com/profile.php?id=100009047588081"
+                        target="_blank">Facebook</a>
+                    <a class="linkedIn" href="https://www.linkedin.com/in/pradana-rahmat-saputra-883813210/"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </footer>
+        </div>
+        <!-- Akhir Footer -->
+
+    </div>
+</body>
